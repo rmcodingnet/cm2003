@@ -1,7 +1,7 @@
 $(function(){
 	//document ready
 	alert("document ready");
-	
+
 	$('#searchform').submit(function(){
 		//get current value and add to items list
 		var searchterms = $("#searchterms").val();
@@ -20,7 +20,7 @@ function getResultsFromOMDB (searchterms) {
 			//handle the results
 			prettyPrintJSON(jsondata);
 		});
-		
+
 }
 
 
@@ -28,7 +28,9 @@ function prettyPrintJSON(jsondata){
 	//prints the prettyJSON to the screen
 	var pretty= JSON.stringify(jsondata, null,4);
 	$('#resultsbox').append("<pre>" +pretty + "</pre>");
-		
+
 }
 
-
+// $.each(json.Poster) {
+//
+// }
